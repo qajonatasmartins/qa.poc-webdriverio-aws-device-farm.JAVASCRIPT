@@ -1,0 +1,1 @@
+# qa.poc-webdriverio-aws-device-farm.JAVASCRIPT
