@@ -1,0 +1,36 @@
+{
+  "name": "qa.poc-webdriverio-aws-device-farm.javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e:chrome": "cross-env AMBIENTE='producao' wdio run ./config/wdio.chrome.conf.js",
+    "e2e:firefox": "cross-env AMBIENTE='producao' wdio run ./config/wdio.firefox.conf.js",
+    "e2e:edge": "cross-env AMBIENTE='producao' wdio run ./config/wdio.edge.conf.js",
+    "e2e:chrome_staging": "cross-env AMBIENTE='staging' wdio run ./config/wdio.chrome.conf.js",
+    "e2e:firefox_staging": "cross-env AMBIENTE='staging' wdio run ./config/wdio.firefox.conf.js",
+    "e2e:edge_staging": "cross-env AMBIENTE='staging' wdio run ./config/wdio.edge.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qajonatasmartins/qa.poc-webdriverio-aws-device-farm.JAVASCRIPT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qajonatasmartins/qa.poc-webdriverio-aws-device-farm.JAVASCRIPT/issues"
+  },
+  "homepage": "https://github.com/qajonatasmartins/qa.poc-webdriverio-aws-device-farm.JAVASCRIPT#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1267.0"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.0.4",
+    "@wdio/local-runner": "^8.0.4",
+    "@wdio/mocha-framework": "^8.0.2",
+    "@wdio/spec-reporter": "^8.0.0",
+    "chromedriver": "^108.0.0",
+    "cross-env": "^7.0.3",
+    "wdio-chromedriver-service": "^8.0.0"
+  }
+}
